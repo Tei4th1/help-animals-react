@@ -1,8 +1,17 @@
 import React from "react";
 import "./App.css";
+import { Header } from "./components/Header";
+import { Title } from "./components/Title";
+import { Wrapper } from "./components/Wrapper";
 
 function App() {
-  return <h1>hi</h1>;
+  return (
+    <Wrapper>
+      <Header>
+        <Title>Wild Life</Title>
+      </Header>
+    </Wrapper>
+  );
 }
 
 export default App;
