@@ -8,7 +8,18 @@ function App() {
   return (
     <Wrapper>
       <Header>
-        <Title>Wild Life</Title>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            margin: "15px",
+            left: "19px",
+          }}
+        >
+          <svg xmlns="./logos.svg" width={70} height={60} />
+          <Title>Wild Life</Title>
+        </div>
       </Header>
     </Wrapper>
   );

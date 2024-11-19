@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.div`
-  width: 100%;
+  top: 1.188em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
