@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import React from "react";
 
-export const Title = styled.h1`
+export const LogButton = styled.button`
+  border: 2px solid #cd6326;
+  text-size: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 32px;
+  background-color: transparent;
   color: #f7f7f7;
+  border-radius: 5px;
 `;
