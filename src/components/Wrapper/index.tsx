@@ -2,17 +2,24 @@ import React from "react";
 import styled from "styled-components";
 
 export const Background = styled.body`
+  top: 0;
+  left: 0;
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url("/BG.png");
   display: flex;
   margin: 0;
   flex-direction: column;
-  height: 100%;
-  background-size: contain;
-  background-position: 0 0;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    background-size: contain;
+    background-position: top;
+  }
 `;
 type TWrapper = {
   children: React.ReactNode;
