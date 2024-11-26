@@ -10,5 +10,9 @@ export const Navigation = styled.li`
     font-style: normal;
     text-decoration: none;
     font-size: 23px;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
   }
 `;
