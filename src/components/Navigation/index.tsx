@@ -4,6 +4,7 @@ import React from "react";
 export const Navigation = styled.li`
   a {
     padding-right: 25px;
+    padding-right: 25px;
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
