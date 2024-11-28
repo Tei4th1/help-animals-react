@@ -25,7 +25,7 @@ function App() {
               <a href="*">Articles</a>
             </Navigation>
             <Navigation>
-              <a href="*">Contacts</a>
+              <a href="*">Contact</a>
             </Navigation>
             <li>
               <Loupe />
