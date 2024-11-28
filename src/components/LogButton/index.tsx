@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import React from "react";
 
 export const LogButton = styled.button`
   border: 2px solid #cd6326;
