@@ -10,4 +10,9 @@ export const LogButton = styled.button`
   color: #f7f7f7;
   border-radius: 5px;
   padding: 10px 20px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
 `;
