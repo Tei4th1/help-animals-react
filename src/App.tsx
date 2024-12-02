@@ -8,33 +8,36 @@ import { LogButton } from "./components/LogButton";
 import { Navigation } from "./components/Navigation";
 import { NavContainer } from "./components/NavContainer";
 import { LogoContainer } from "./components/LogoContainer";
+import { Container } from "./components/Container";
 
 function App() {
   return (
     <Wrapper>
-      <Header>
-        <LogoContainer>
-          <Logo />
-          <Title>Wild Life</Title>
-        </LogoContainer>
+      <Container>
+        <Header>
+          <LogoContainer>
+            <Logo />
+            <Title>WILDLIFE</Title>
+          </LogoContainer>
 
-        <NavContainer>
-          <ul>
-            <Navigation>
-              <a href="*">Articles</a>
-            </Navigation>
-            <Navigation>
-              <a href="*">Contact</a>
-            </Navigation>
-            <li>
-              <Loupe />
-            </li>
-            <li>
-              <LogButton>Log in</LogButton>
-            </li>
-          </ul>
-        </NavContainer>
-      </Header>
+          <NavContainer>
+            <ul>
+              <Navigation>
+                <a href="*">Articles</a>
+              </Navigation>
+              <Navigation>
+                <a href="*">Contact</a>
+              </Navigation>
+              <li>
+                <Loupe />
+              </li>
+              <li>
+                <LogButton>Log in</LogButton>
+              </li>
+            </ul>
+          </NavContainer>
+        </Header>
+      </Container>
     </Wrapper>
   );
 }

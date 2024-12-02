@@ -8,6 +8,7 @@ export const NavContainer = styled.nav`
     padding: 0;
     margin: 0;
     list-style-type: none;
+    align-items: center;
 
     @media (max-width: 768px) {
       flex-direction: column;
