@@ -9,6 +9,9 @@ import { Navigation } from "./components/Navigation";
 import { NavContainer } from "./components/NavContainer";
 import { LogoContainer } from "./components/LogoContainer";
 import { Container } from "./components/Container";
+import { Survival } from "./components/Survival";
+import { MainInfo } from "./components/MainInfo/Index";
+import { DonateButton } from "./components/DonateButton";
 
 function App() {
   return (
@@ -37,6 +40,15 @@ function App() {
             </ul>
           </NavContainer>
         </Header>
+
+        <Survival>
+          <Title>SURVIVAL</Title>
+          <MainInfo>
+            What this means is that we exist to help protect our environment and
+            do in numbers of ways. You can save the planet by donation.
+          </MainInfo>
+          <DonateButton>Donate</DonateButton>
+        </Survival>
       </Container>
     </Wrapper>
   );

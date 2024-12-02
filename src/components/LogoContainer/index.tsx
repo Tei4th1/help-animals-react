@@ -5,7 +5,6 @@ export const LogoContainer = styled.div`
   align-items: center;
   gap: 10px;
   margin: 0;
-  padding-left: 30px;
 
   @media (max-width: 768px) {
     justify-content: center;
