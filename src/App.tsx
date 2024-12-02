@@ -12,6 +12,7 @@ import { Container } from "./components/Container";
 import { Survival } from "./components/Survival";
 import { MainInfo } from "./components/MainInfo/Index";
 import { DonateButton } from "./components/DonateButton";
+import { SurvivalTitle } from "./components/SurvivalTitle";
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
         </Header>
 
         <Survival>
-          <Title>SURVIVAL</Title>
+          <SurvivalTitle>SURVIVAL</SurvivalTitle>
           <MainInfo>
             What this means is that we exist to help protect our environment and
             do in numbers of ways. You can save the planet by donation.
