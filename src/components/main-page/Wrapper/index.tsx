@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Background = styled.body`
   top: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   width: 90em;
   height: 48.75em;
   background-image: url("/BG.png");
@@ -14,7 +14,7 @@ export const Background = styled.body`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     background-size: contain;
