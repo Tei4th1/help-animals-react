@@ -5,8 +5,8 @@ export const Background = styled.body`
   top: 0;
   left: 0;
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 90em;
+  height: 48.75em;
   background-image: url("/BG.png");
   display: flex;
   margin: 0;
@@ -14,7 +14,7 @@ export const Background = styled.body`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
+  overflow-x: hidden;
 
   @media (max-width: 768px) {
     background-size: contain;

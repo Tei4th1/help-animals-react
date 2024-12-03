@@ -1,18 +1,18 @@
 import "./App.css";
-import { Header } from "./components/Header";
-import { Title } from "./components/Title";
-import { Wrapper } from "./components/Wrapper";
-import { Logo } from "./components/Icons/Logo";
-import { Loupe } from "./components/Icons/Loupe";
-import { LogButton } from "./components/LogButton";
-import { Navigation } from "./components/Navigation";
-import { NavContainer } from "./components/NavContainer";
-import { LogoContainer } from "./components/LogoContainer";
-import { Container } from "./components/Container";
-import { Survival } from "./components/Survival";
-import { MainInfo } from "./components/MainInfo/Index";
-import { DonateButton } from "./components/DonateButton";
-import { SurvivalTitle } from "./components/SurvivalTitle";
+import { Header } from "./components/main-page/Header";
+import { Title } from "./components/main-page/Title";
+import { Wrapper } from "./components/main-page/Wrapper";
+import { Logo } from "./components/main-page/Icons/Logo";
+import { Loupe } from "./components/main-page/Icons/Loupe";
+import { LogButton } from "./components/main-page/LogButton";
+import { Navigation } from "./components/main-page/Navigation";
+import { NavContainer } from "./components/main-page/NavContainer";
+import { LogoContainer } from "./components/main-page/LogoContainer";
+import { Container } from "./components/main-page/Container";
+import { Survival } from "./components/main-page/Survival";
+import { MainInfo } from "./components/main-page/MainInfo/Index";
+import { DonateButton } from "./components/main-page/DonateButton";
+import { SurvivalTitle } from "./components/main-page/SurvivalTitle";
 
 function App() {
   return (
