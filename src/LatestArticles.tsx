@@ -32,7 +32,7 @@ function LatestArticles() {
 
   return (
     <Container>
-      <Title>LATEST ARTICLES</Title>
+      <Title>Latest articles</Title>
       <Subtitle>Breaking news from the wild</Subtitle>
       <SliderContainer>
         <StyledButton onClick={handlePrev}>
