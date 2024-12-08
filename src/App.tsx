@@ -13,7 +13,6 @@ import { Survival } from "./components/main-page/Survival";
 import { MainInfo } from "./components/main-page/MainInfo/Index";
 import { DonateButton } from "./components/main-page/DonateButton";
 import { SurvivalTitle } from "./components/main-page/SurvivalTitle";
-import { Subtitle } from "./components/latest-articles/Subtitle";
 
 function App() {
   return (
