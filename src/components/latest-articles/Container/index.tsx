@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  top: 780px;
-  position: absolute;
+  position: static;
   width: 100%;
   height: 100%;
+  margin-bottom: 40px;
 `;

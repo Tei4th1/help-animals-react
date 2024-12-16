@@ -6,7 +6,9 @@ export const GlobalContainer = styled.body`
   margin: 0;
   padding: 0;
   position: fixed;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   background-size: cover;
   width: 100%;
   height: 100%;

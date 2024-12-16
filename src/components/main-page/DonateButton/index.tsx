@@ -7,6 +7,7 @@ export const DonateButton = styled.button`
   font-style: normal;
   background-color: #CD6326;
   color: #f7f7f7;
+  border: none;
   border-radius: 5px;
   padding: 10px 20px;
   width: 160px;

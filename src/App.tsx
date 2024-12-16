@@ -15,6 +15,7 @@ import { DonateButton } from "./components/main-page/DonateButton";
 import { SurvivalTitle } from "./components/main-page/SurvivalTitle";
 import { GlobalContainer } from "./components/GlobalContainer";
 import LatestArticles from "./LatestArticles";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
       </Wrapper>
 
       <LatestArticles />
+      <Footer />
     </GlobalContainer>
   );
 }
