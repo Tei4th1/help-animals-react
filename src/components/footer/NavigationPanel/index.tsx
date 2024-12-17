@@ -4,10 +4,11 @@ export const NavigationPanel = styled.nav`
   ul {
     list-style: none;
     display: flex;
-    gap: 85px;
-    margin-left: 120px;
+    justify-content: space-between;
     list-style-type: none;
     align-items: center;
+    flex-wrap: nowrap;
+    gap: 5em;
 
     @media (max-width: 768px) {
       flex-direction: column;

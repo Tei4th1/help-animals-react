@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-  margin-top: 250px;
-  padding: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,6 +8,6 @@ export const FooterContainer = styled.div`
   flex-direction: row;
   width: 100%;
   height: 100%;
-  position: relative;
+  position: flex;
 `;
 export {};

@@ -17,7 +17,7 @@ function Footer() {
       <ItemsContainer>
         <LogoContainer>
           <Logo />
-          <Title>Wild Life</Title>
+          <Title>WILDLIFE</Title>
         </LogoContainer>
         <NavigationPanel>
           <ul>
