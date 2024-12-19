@@ -16,8 +16,12 @@ import { SurvivalTitle } from "./components/main-page/SurvivalTitle";
 import { GlobalContainer } from "./components/GlobalContainer";
 import LatestArticles from "./LatestArticles";
 import Footer from "./components/footer/Footer";
+import { useState } from "react";
+import { ModalContainer } from "./components/main-page/DonatePopup/Modal/idenx";
 
 function App() {
+  const [isModalActive, setModalActive] = useState<boolean>(false);
+
   return (
     <GlobalContainer>
       <Wrapper>
@@ -52,7 +56,10 @@ function App() {
               What this means is that we exist to help protect our environment
               and do in numbers of ways. You can save the planet by donation.
             </MainInfo>
-            <DonateButton>Donate</DonateButton>
+            <DonateButton onClick={() => setModalActive(true)}>
+              Donate
+            </DonateButton>
+            <ModalContainer active={isModalActive} setActive={setModalActive} />
           </Survival>
         </Container>
       </Wrapper>
