@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const CloseButton = styled.button`
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 5px 10px;
-  background-color: #ff4d4d;
+  background-color: #e39128;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  min-height: 40px;
 
   &:hover {
-    background-color: #e63946;
+    background-color: #cd6326;
   }
 `;
