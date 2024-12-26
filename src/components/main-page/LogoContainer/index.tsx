@@ -9,6 +9,18 @@ export const LogoContainer = styled.div`
 
   @media (max-width: 768px) {
     justify-content: center;
+    min-width: 150px;
+    flex-direction: column;
+  }
+  @media (max-width: 420px) {
+    justify-content: center;
+    min-width: 130px;
+    flex-direction: column;
+  }
+  @media (max-width: 340px) {
+    justify-content: center;
+    min-width: 100px;
+    flex-direction: column;
   }
 `;
 export {};

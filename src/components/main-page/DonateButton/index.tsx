@@ -5,7 +5,7 @@ export const DonateButton = styled.button`
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #CD6326;
+  background-color: #cd6326;
   color: #f7f7f7;
   border: none;
   border-radius: 5px;
@@ -17,4 +17,15 @@ export const DonateButton = styled.button`
   @media (max-width: 768px) {
     font-size: 15px;
     padding: 5px 10px;
+  }
+  @media (max-width: 340px) {
+    font-size: 5px;
+    padding: 1px 50px;
+  }
+  @media (max-width: 340px) {
+    display: flex;
+    align-item: center;
+    font-size: 5px;
+    padding: 1px 50px;
+  }
 `;

@@ -10,7 +10,7 @@ export const NavContainer = styled.nav`
     list-style-type: none;
     align-items: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 420px) {
       flex-direction: column;
       align-items: center;
       list-style-type: none;

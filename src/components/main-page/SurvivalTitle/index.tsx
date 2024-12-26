@@ -7,4 +7,7 @@ export const SurvivalTitle = styled.h1`
   font-size: 48px;
   color: #cd6326;
   letter-spacing: 2px;
+
+  @media (max-width: 340px) {
+    font-size: 15px;
 `;

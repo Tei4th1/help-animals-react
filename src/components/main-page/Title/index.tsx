@@ -6,4 +6,8 @@ export const Title = styled.h1`
   font-style: normal;
   font-size: 32px;
   color: #f7f7f7;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+    padding: 5px 10px;
 `;

@@ -10,5 +10,6 @@ export const Header = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
   }
 `;

@@ -7,4 +7,8 @@ export const MainInfo = styled.h1`
   font-size: 18px;
   color: #f7f7f7;
   text-align: justify;
+  max-width: 274px;
+
+  @media (max-width: 768px) {
+  color: black;
 `;
