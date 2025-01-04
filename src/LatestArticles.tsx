@@ -19,7 +19,7 @@ function LatestArticles() {
     "/news2.jpg",
     "/news3.jpg",
   ]);
-
+  const [email, setEmail] = useState<string>("");
   const handleNext = () => {
     setNews((prevNews) => [...prevNews.slice(1), prevNews[0]]);
   };
@@ -30,7 +30,15 @@ function LatestArticles() {
     ]);
   };
 
-  const ()
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email.trim()) {
+      alert(`You successfully send message to ${email}!`);
+      setEmail("");
+    } else {
+      alert("Please enter a valid email address.");
+    }
+  };
 
   return (
     <Container>
@@ -54,10 +62,16 @@ function LatestArticles() {
       <NotifiedTitle id="email">
         Get notified about new amazing articles
       </NotifiedTitle>
-      <EmailContainer>
-        <EmailInput placeholder="Email" />
-        <SubmitButton type="submit">Send</SubmitButton>
-      </EmailContainer>
+      <form onSubmit={handleSubmit}>
+        <EmailContainer>
+          <EmailInput
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <SubmitButton type="submit">Send</SubmitButton>
+        </EmailContainer>
+      </form>
     </Container>
   );
 }
