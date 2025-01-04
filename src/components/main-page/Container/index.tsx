@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 0 ;
-  position:flex;
+  margin: 0 120px ;
+  position:f lex;
+
    @media (max-width: 1200px) {
     margin 0 120px;
     padding 10px;
 }
-
+@media (max-width: 1024px) {
+    margin 0 120px;
+    padding 10px;
+}
   @media (max-width: 768px) {
     margin 0 90px;
     padding 10px;

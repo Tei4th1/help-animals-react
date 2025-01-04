@@ -14,7 +14,14 @@ export const NavContainer = styled.nav`
       flex-direction: column;
       align-items: center;
       list-style-type: none;
-      gap: 10px;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      list-style-type: none;
+      gap: 20px;
     }
   }
 `;

@@ -10,5 +10,5 @@ export const MainInfo = styled.h1`
   max-width: 274px;
 
   @media (max-width: 768px) {
-  color: black;
+    font-size: 14px;
 `;

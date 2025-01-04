@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CloseButton = styled.button`
+export const SendButton = styled.button`
   margin-top: 30px;
   padding: 5px 10px;
   background-color: #e39128;

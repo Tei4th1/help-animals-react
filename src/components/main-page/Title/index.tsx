@@ -8,6 +8,11 @@ export const Title = styled.h1`
   color: #f7f7f7;
 
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    font-size: 20px;
     padding: 5px 10px;
 `;

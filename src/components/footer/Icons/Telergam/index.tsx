@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 export const Telegram = (props: SVGProps<SVGSVGElement>) => (
-  <a href="http://t.me/tei4th">
+  <a href="http://t.me/tei4th" target="_blank" rel="noreferrer">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={40}

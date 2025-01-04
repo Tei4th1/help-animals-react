@@ -17,13 +17,14 @@ import { GlobalContainer } from "./components/GlobalContainer";
 import LatestArticles from "./LatestArticles";
 import Footer from "./components/footer/Footer";
 import { useState } from "react";
-import { ModalContainer } from "./components/main-page/DonatePopup/Modal/idenx";
+import { ModalContainer } from "./components/main-page/DonatePopup/Modal";
 
 function App() {
   const [isModalActive, setModalActive] = useState<boolean>(false);
 
   return (
     <GlobalContainer>
+      <a id="about" />
       <Wrapper>
         <Container>
           <Header>
@@ -35,16 +36,18 @@ function App() {
             <NavContainer>
               <ul>
                 <Navigation>
-                  <a href="*">Articles</a>
+                  <a href="#articles">Articles</a>
                 </Navigation>
                 <Navigation>
-                  <a href="*">Contact</a>
+                  <a href="#contacts">Contacts</a>
                 </Navigation>
                 <li>
                   <Loupe />
                 </li>
                 <li>
-                  <LogButton>Log in</LogButton>
+                  <a href="#email">
+                    <LogButton>Log in</LogButton>
+                  </a>
                 </li>
               </ul>
             </NavContainer>
@@ -63,7 +66,6 @@ function App() {
           </Survival>
         </Container>
       </Wrapper>
-
       <LatestArticles />
       <Footer />
     </GlobalContainer>

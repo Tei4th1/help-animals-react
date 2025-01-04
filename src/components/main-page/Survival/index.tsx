@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Survival = styled.div`
+  position: flex;
   margin-top: 100px;
   padding: 20px;
   margin-bottom: 220px;
@@ -16,6 +17,8 @@ export const Survival = styled.div`
   @media (max-width: 340px) {
     margin-top: 40px;
     margin-bottom: 100px;
+    gap: 10px;
+    justify-content: center;
   }
 `;
 export {};

@@ -14,6 +14,7 @@ import { Telegram } from "./Icons/Telergam";
 function Footer() {
   return (
     <FooterContainer>
+      <a id="contacts" />
       <ItemsContainer>
         <LogoContainer>
           <Logo />
@@ -22,13 +23,18 @@ function Footer() {
         <NavigationPanel>
           <ul>
             <NavLinksStyle>
-              <a href="*">Articles</a>
+              <a href="#articles">Articles</a>
             </NavLinksStyle>
             <NavLinksStyle>
-              <a href="*">About us</a>
+              <a href="#about">About us</a>
             </NavLinksStyle>
             <NavLinksStyle>
-              <a href="*">Learn more</a>
+              <a
+                href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B8%D0%BD%D0%BF%D0%B8%D1%81"
+                target="_blank"
+              >
+                Learn more
+              </a>
             </NavLinksStyle>
           </ul>
         </NavigationPanel>

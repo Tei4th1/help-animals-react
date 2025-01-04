@@ -12,7 +12,11 @@ export const Navigation = styled.li`
     font-size: 23px;
 
     @media (max-width: 768px) {
-      font-size: 15px;
+      font-size: 20px;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 18px;
     }
   }
 `;

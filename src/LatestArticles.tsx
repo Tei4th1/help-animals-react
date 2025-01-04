@@ -30,9 +30,13 @@ function LatestArticles() {
     ]);
   };
 
+  const ()
+
   return (
     <Container>
-      <Title>Latest articles</Title>
+      <Title>
+        <a id="articles">Latest articles</a>
+      </Title>
       <Subtitle>Breaking news from the wild</Subtitle>
       <SliderContainer>
         <StyledButton onClick={handlePrev}>
@@ -47,7 +51,9 @@ function LatestArticles() {
           <ArrowSlider direction="right" />
         </StyledButton>
       </SliderContainer>
-      <NotifiedTitle>Get notified about new amazing articles</NotifiedTitle>
+      <NotifiedTitle id="email">
+        Get notified about new amazing articles
+      </NotifiedTitle>
       <EmailContainer>
         <EmailInput placeholder="Email" />
         <SubmitButton type="submit">Send</SubmitButton>

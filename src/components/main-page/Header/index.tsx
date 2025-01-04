@@ -10,6 +10,18 @@ export const Header = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;
+    gap: 100px;
+  }
+
+  @media (min-width: 420px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+}
+    @media (min-width: 340px) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 100px;
+    }
   }
 `;

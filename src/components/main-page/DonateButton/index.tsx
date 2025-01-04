@@ -19,13 +19,9 @@ export const DonateButton = styled.button`
     padding: 5px 10px;
   }
   @media (max-width: 340px) {
-    font-size: 5px;
     padding: 1px 50px;
   }
   @media (max-width: 340px) {
-    display: flex;
-    align-item: center;
-    font-size: 5px;
     padding: 1px 50px;
   }
 `;

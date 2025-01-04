@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Background = styled.body`
+export const Background = styled.div`
   top: 0;
   left: 0;
   position: static;
@@ -16,8 +16,7 @@ export const Background = styled.body`
   margin-bottom: 100px;
 
   @media (max-width: 768px) {
-    background-size: contain;
-    background-position: top;
+    width: 100%;
   }
 `;
 type TWrapper = {

@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { CloseButton } from "../CloseButton";
+import { SendButton } from "../SendButton";
 import { useState } from "react";
+import { JsxElement } from "typescript";
 
 interface PopupOverlayProps {
   show: boolean;
@@ -93,11 +94,26 @@ const CommentInput = styled.input`
   border: 1px solid #d3d3d3;
   background: none;
 `;
-
 export const ModalContainer: React.FC<ModalContainerProps> = ({
   active,
   setActive,
 }) => {
+  const [name, setName] = useState("");
+  const [amount, setAmount] = useState(0);
+  const [comment, setComment] = useState("");
+
+  const onSend = (data: {
+    userName: string;
+    donationAmount: number;
+    donationComment: string;
+  }) => {
+    const { userName, donationAmount, donationComment } = data;
+    window.alert(
+      `Dear ${userName}, thx for donation with ${donationAmount}$ with comment ${donationComment}`,
+    );
+    setActive(false);
+  };
+
   return (
     <Modal show={active} onClick={() => setActive(false)}>
       <ModalContent onClick={(e) => e.stopPropagation()}>
@@ -105,17 +121,34 @@ export const ModalContainer: React.FC<ModalContainerProps> = ({
         <Container>
           <InputsContainer>
             <InputTitle>Your name</InputTitle>
-            <NameInput placeholder="Name" pattern="/^[a-zA-Z ]+$/"></NameInput>
+            <NameInput
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Name"
+              pattern="/^[a-zA-Z ]+$/"
+            ></NameInput>
           </InputsContainer>
           <InputsContainer>
             <InputTitle>Amount</InputTitle>
-            <MoneyInput placeholder="1000$" type="number"></MoneyInput>
+            <MoneyInput
+              onChange={(e) => setAmount(Number(e.target.value))}
+              placeholder="1000$"
+            ></MoneyInput>
           </InputsContainer>
           <InputsContainer>
             <InputTitle>Your comment</InputTitle>
-            <CommentInput />
+            <CommentInput onChange={(e) => setComment(e.target.value)} />
           </InputsContainer>
-          <CloseButton onClick={() => setActive(false)}>Close</CloseButton>
+          <SendButton
+            onClick={() =>
+              onSend({
+                userName: name,
+                donationAmount: amount,
+                donationComment: comment,
+              })
+            }
+          >
+            Send
+          </SendButton>
         </Container>
       </ModalContent>
     </Modal>
