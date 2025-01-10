@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 0 120px ;
-  position:f lex;
+  position:flex;
 
    @media (max-width: 1200px) {
     margin 0 120px;
@@ -17,6 +17,7 @@ export const Container = styled.div`
     padding 10px;
 }
     @media (max-width: 420px) {
+    flex-direction: column;
     margin 0 60px;
     padding 10px;
 }

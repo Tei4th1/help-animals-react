@@ -46,7 +46,7 @@ function App() {
                 </li>
                 <li>
                   <a href="#email">
-                    <LogButton>Log in</LogButton>
+                    <LogButton>Sign in</LogButton>
                   </a>
                 </li>
               </ul>

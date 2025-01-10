@@ -8,4 +8,8 @@ export const NotifiedTitle = styled.h3`
   color: #333333;
   text-align: center;
   margin-top: 240px;
+
+  @media (max-width: 430px) {
+    font-size: 23px;
+  }
 `;

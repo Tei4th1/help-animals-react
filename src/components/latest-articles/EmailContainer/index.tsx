@@ -6,6 +6,7 @@ export const EmailContainer = styled.div`
   margin-left: auto;
   display: flex;
   justify-content: center;
-  height: 300px;
+  height: 100%;
+  margin-bottom: 250px;
 `;
 export {};

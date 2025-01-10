@@ -12,7 +12,7 @@ export const LogButton = styled.button`
   padding: 10px 20px;
 
   @media (max-width: 768px) {
-    font-size: 15px;
-    padding: 5px 10px;
+    font-size: 23px;
+    padding: 10px 20px;
   }
 `;

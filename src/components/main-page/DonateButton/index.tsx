@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const DonateButton = styled.button`
+  margin-top: 30px;
   font-size: 23px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;

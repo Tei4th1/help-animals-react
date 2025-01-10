@@ -4,7 +4,7 @@ import { Title } from "./components/latest-articles/Title";
 import { Container } from "./components/latest-articles/Container";
 import { Subtitle } from "./components/latest-articles/Subtitle";
 import { SliderContainer } from "./components/latest-articles/SliderContainer";
-import { ArrowSlider } from "./components/latest-articles/Icon/ArrowSlider";
+import { ArrowSlider } from "./components/latest-articles/Icons/ArrowSlider";
 import { NewsContainer } from "./components/latest-articles/NewsContainer";
 import { StyledButton } from "./components/latest-articles/StyledButton";
 import { NewsImage } from "./components/latest-articles/NewsImage";

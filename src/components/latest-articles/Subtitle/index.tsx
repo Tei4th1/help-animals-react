@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Subtitle = styled.h2`
+  margin-bottom: 150px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
