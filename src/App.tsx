@@ -13,7 +13,7 @@ import { Survival } from "./components/main-page/Survival";
 import { MainInfo } from "./components/main-page/MainInfo/Index";
 import { DonateButton } from "./components/main-page/DonateButton";
 import { SurvivalTitle } from "./components/main-page/SurvivalTitle";
-import { GlobalContainer } from "./components/GlobalContainer";
+import { RootContainer } from "./components/RootContainer";
 import LatestArticles from "./LatestArticles";
 import Footer from "./components/footer/Footer";
 import { useState } from "react";
@@ -23,7 +23,7 @@ function App() {
   const [isModalActive, setModalActive] = useState<boolean>(false);
 
   return (
-    <GlobalContainer>
+    <RootContainer>
       <a id="about" />
       <Wrapper>
         <Container>
@@ -68,7 +68,7 @@ function App() {
       </Wrapper>
       <LatestArticles />
       <Footer />
-    </GlobalContainer>
+    </RootContainer>
   );
 }
 

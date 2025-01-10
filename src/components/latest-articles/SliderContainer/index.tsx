@@ -6,4 +6,3 @@ export const SliderContainer = styled.div`
   justify-content: center;
   gap: 60px;
 `;
-export {};

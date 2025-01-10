@@ -9,4 +9,3 @@ export const EmailContainer = styled.div`
   height: 100%;
   margin-bottom: 250px;
 `;
-export {};

@@ -12,4 +12,3 @@ export const SubmitButton = styled.button`
   background: #cd6326;
   border-radius: 0 15px 15px 0;
 `;
-export {};

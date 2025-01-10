@@ -25,4 +25,3 @@ export const NavContainer = styled.nav`
     }
   }
 `;
-export {};

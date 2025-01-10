@@ -18,4 +18,3 @@ export const NavigationPanel = styled.nav`
     }
   }
 `;
-export {};

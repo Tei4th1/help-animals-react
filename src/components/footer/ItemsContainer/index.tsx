@@ -14,4 +14,3 @@ export const ItemsContainer = styled.div`
     align-items: center;
   }
 `;
-export {};

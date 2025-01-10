@@ -21,4 +21,3 @@ export const Survival = styled.div`
     justify-content: center;
   }
 `;
-export {};
