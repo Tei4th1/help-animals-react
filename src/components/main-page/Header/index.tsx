@@ -1,6 +1,13 @@
 import styled from "styled-components";
+import { LogoContainer } from "../LogoContainer";
+import { Logo } from "../Icons/Logo";
+import { Title } from "../Title";
+import { NavContainer } from "../NavContainer";
+import { Navigation } from "../Navigation";
+import { Loupe } from "../Icons/Loupe";
+import { LogButton } from "../LogButton";
 
-export const Header = styled.div`
+const HeaderContainer = styled.div`
   top: 1.188em;
   display: flex;
   align-items: center;
@@ -25,3 +32,34 @@ export const Header = styled.div`
     }
   }
 `;
+
+function Header() {
+  return (
+    <HeaderContainer>
+      <LogoContainer>
+        <Logo />
+        <Title>WILDLIFE</Title>
+      </LogoContainer>
+
+      <NavContainer>
+        <ul>
+          <Navigation>
+            <a href="#articles">Articles</a>
+          </Navigation>
+          <Navigation>
+            <a href="#contacts">Contacts</a>
+          </Navigation>
+          <li>
+            <Loupe />
+          </li>
+          <li>
+            <a href="#email">
+              <LogButton>Sign in</LogButton>
+            </a>
+          </li>
+        </ul>
+      </NavContainer>
+    </HeaderContainer>
+  );
+}
+export default Header;

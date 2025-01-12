@@ -1,17 +1,17 @@
 import "./App.css";
 import React, { useState } from "react";
-import { Title } from "./components/latest-articles/Title";
-import { Container } from "./components/latest-articles/Container";
-import { Subtitle } from "./components/latest-articles/Subtitle";
-import { SliderContainer } from "./components/latest-articles/SliderContainer";
-import { ArrowSlider } from "./components/latest-articles/Icons/ArrowSlider";
-import { NewsContainer } from "./components/latest-articles/NewsContainer";
-import { StyledButton } from "./components/latest-articles/StyledButton";
-import { NewsImage } from "./components/latest-articles/NewsImage";
-import { NotifiedTitle } from "./components/latest-articles/NotifiedTitle";
-import { EmailInput } from "./components/latest-articles/EmailInput";
-import { EmailContainer } from "./components/latest-articles/EmailContainer";
-import { SubmitButton } from "./components/latest-articles/SubmitButton";
+import { Title } from "./Title";
+import { Container } from "./Container";
+import { Subtitle } from "./Subtitle";
+import { SliderContainer } from "./SliderContainer";
+import { ArrowSlider } from "./Icons/ArrowSlider";
+import { NewsContainer } from "./NewsContainer";
+import { StyledButton } from "./StyledButton";
+import { NewsImage } from "./NewsImage";
+import { NotifiedTitle } from "./NotifiedTitle";
+import { EmailInput } from "./EmailInput";
+import { EmailContainer } from "./EmailContainer";
+import { SubmitButton } from "./SubmitButton";
 
 function LatestArticles() {
   const [news, setNews] = useState<string[]>([
