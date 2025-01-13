@@ -1,15 +1,15 @@
 import { FooterContainer } from "./FooterContainer";
-import { Logo } from "../main-page/Icons/Logo";
+import { Logo } from "../Icons/Logo";
 import { LogoContainer } from "../main-page/LogoContainer";
 import { Title } from "../main-page/Title";
 import { ItemsContainer } from "./ItemsContainer";
 import { NavigationPanel } from "./NavigationPanel";
 import { NavLinksStyle } from "./NavLinksStyle";
 import { LinksContainer } from "./LinksContainer";
-import { Facebook } from "./Icons/Facebook";
-import { Inst } from "./Icons/Inst";
-import { Pintrest } from "./Icons/Pintrest";
-import { Telegram } from "./Icons/Telergam";
+import { Facebook } from "../Icons/Facebook";
+import { Inst } from "../Icons/Inst";
+import { Pintrest } from "../Icons/Pintrest";
+import { Telegram } from "../Icons/Telergam";
 
 function Footer() {
   return (

@@ -4,7 +4,7 @@ import { Title } from "./Title";
 import { Container } from "./Container";
 import { Subtitle } from "./Subtitle";
 import { SliderContainer } from "./SliderContainer";
-import { ArrowSlider } from "./Icons/ArrowSlider";
+import { ArrowSlider } from "../Icons/ArrowSlider";
 import { NewsContainer } from "./NewsContainer";
 import { StyledButton } from "./StyledButton";
 import { NewsImage } from "./NewsImage";
