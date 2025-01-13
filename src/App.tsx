@@ -1,10 +1,12 @@
 import "./App.css";
-import { Wrapper } from "./components/main-page/Wrapper";
-import { Container } from "./components/main-page/Container";
-import { Survival } from "./components/main-page/Survival";
-import { MainInfo } from "./components/main-page/MainInfo/Index";
-import { DonateButton } from "./components/main-page/DonateButton";
-import { SurvivalTitle } from "./components/main-page/SurvivalTitle";
+import {
+  Wrapper,
+  Container,
+  Survival,
+  SurvivalTitle,
+  DonateButton,
+  MainInfo,
+} from "./components/main-page/";
 import { RootContainer } from "./components/RootContainer";
 import LatestArticles from "./components/latest-articles/LatestArticles";
 import Footer from "./components/footer/Footer";

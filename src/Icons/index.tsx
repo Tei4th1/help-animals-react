@@ -1,0 +1,7 @@
+export * from './ArrowSlider'
+export * from './Facebook'
+export * from './Inst'
+export * from './Logo'
+export * from './Loupe'
+export * from './Pintrest'
+export * from './Telergam'

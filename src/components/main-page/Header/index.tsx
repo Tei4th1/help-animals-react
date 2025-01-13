@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { LogoContainer } from "../LogoContainer";
-import { Logo } from "../../Icons/Logo";
+import { Logo } from "../../../Icons/Logo";
 import { Title } from "../Title";
 import { NavContainer } from "../NavContainer";
 import { Navigation } from "../Navigation";
-import { Loupe } from "../../Icons/Loupe";
+import { Loupe } from "../../../Icons/Loupe";
 import { LogButton } from "../LogButton";
 
 const HeaderContainer = styled.div`

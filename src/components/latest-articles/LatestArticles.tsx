@@ -1,17 +1,18 @@
-import "./App.css";
 import React, { useState } from "react";
-import { Title } from "./Title";
-import { Container } from "./Container";
-import { Subtitle } from "./Subtitle";
-import { SliderContainer } from "./SliderContainer";
-import { ArrowSlider } from "../Icons/ArrowSlider";
-import { NewsContainer } from "./NewsContainer";
-import { StyledButton } from "./StyledButton";
-import { NewsImage } from "./NewsImage";
-import { NotifiedTitle } from "./NotifiedTitle";
-import { EmailInput } from "./EmailInput";
-import { EmailContainer } from "./EmailContainer";
-import { SubmitButton } from "./SubmitButton";
+import {
+  Title,
+  Container,
+  Subtitle,
+  SliderContainer,
+  NewsContainer,
+  StyledButton,
+  NewsImage,
+  NotifiedTitle,
+  EmailInput,
+  EmailContainer,
+  SubmitButton,
+} from "./";
+import { ArrowSlider } from "../../Icons/ArrowSlider";
 
 function LatestArticles() {
   const [news, setNews] = useState<string[]>([
