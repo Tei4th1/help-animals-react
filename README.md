@@ -1,3 +1,3 @@
 # Deployed with Netlify
-> [see preview](https://deploy-preview-6--aquamarine-mooncake-826c0a.netlify.app/)
 
+> [see preview](https://animalh-lp.netlify.app/)
