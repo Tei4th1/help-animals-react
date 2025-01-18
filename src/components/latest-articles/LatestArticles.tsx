@@ -16,9 +16,9 @@ import { ArrowSlider } from "../../Icons/ArrowSlider";
 
 function LatestArticles() {
   const [news, setNews] = useState<string[]>([
-    "/news1.jpg",
-    "/news2.jpg",
-    "/news3.jpg",
+    "img/news1.jpg",
+    "img/news2.jpg",
+    "img/news3.jpg",
   ]);
   const [email, setEmail] = useState<string>("");
   const handleNext = () => {

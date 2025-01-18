@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Background = styled.div`
   position: flex;
   width: 100%;
-  background-image: url("/BG.png");
+  background-image: url("img/BG.png");
   flex-direction: column;
   background-size: cover;
   background-position: center;
