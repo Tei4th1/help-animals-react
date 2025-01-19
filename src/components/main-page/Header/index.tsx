@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import { LogoContainer } from "../LogoContainer";
-import { Logo } from "../../../Icons/Logo";
-import { Title } from "../Title";
 import { NavContainer } from "../NavContainer";
 import { Navigation } from "../Navigation";
 import { Loupe } from "../../../Icons/Loupe";
 import { LogButton } from "../LogButton";
+import { LogoComponent } from "../../logo-component";
 
 const HeaderContainer = styled.div`
   top: 1.188em;
@@ -36,10 +34,7 @@ const HeaderContainer = styled.div`
 function Header() {
   return (
     <HeaderContainer>
-      <LogoContainer>
-        <Logo />
-        <Title>WILDLIFE</Title>
-      </LogoContainer>
+      <LogoComponent/>
 
       <NavContainer>
         <ul>
