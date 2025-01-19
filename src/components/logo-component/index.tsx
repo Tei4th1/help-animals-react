@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { Logo } from "../../Icons/Logo";
+import { Title } from "../main-page";
 
-export const LogoContainer = styled.div`
+const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
@@ -24,3 +26,11 @@ export const LogoContainer = styled.div`
   }
 `;
 
+export function LogoComponent() {
+  return (
+    <LogoContainer>
+      <Logo />
+      <Title>WILDLIFE</Title>
+    </LogoContainer>
+  );
+}

@@ -1,7 +1,6 @@
 export * from "./Container";
 export * from "./DonateButton";
 export * from "./LogButton";
-export * from "./LogoContainer";
 export * from "./NavContainer";
 export * from "./Survival";
 export * from "./SurvivalTitle";

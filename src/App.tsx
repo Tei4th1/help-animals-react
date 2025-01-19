@@ -8,11 +8,11 @@ import {
   MainInfo,
 } from "./components/main-page/";
 import { RootContainer } from "./components/RootContainer";
-import LatestArticles from "./components/latest-articles/LatestArticles";
-import Footer from "./components/footer/Footer";
 import { useState } from "react";
 import { ModalContainer } from "./components/main-page/DonatePopup/Modal";
 import Header from "./components/main-page/Header";
+import LatestArticles from "./components/latest-articles/LatestArticles";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [isModalActive, setModalActive] = useState<boolean>(false);

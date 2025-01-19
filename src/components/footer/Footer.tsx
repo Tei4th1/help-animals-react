@@ -5,19 +5,15 @@ import {
   LinksContainer,
   NavLinksStyle,
 } from "./";
-import { LogoContainer } from "../main-page/LogoContainer";
-import { Title } from "../main-page/Title";
-import { Logo, Pintrest, Telegram, Inst, Facebook } from "../../Icons";
+import { Pintrest, Telegram, Inst, Facebook } from "../../Icons";
+import { LogoComponent } from "../logo-component";
 
 function Footer() {
   return (
     <FooterContainer>
       <a id="contacts" />
       <ItemsContainer>
-        <LogoContainer>
-          <Logo />
-          <Title>WILDLIFE</Title>
-        </LogoContainer>
+        <LogoComponent />
         <NavigationPanel>
           <ul>
             <NavLinksStyle>
