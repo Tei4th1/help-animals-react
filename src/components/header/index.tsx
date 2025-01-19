@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { NavContainer } from "../NavContainer";
-import { Navigation } from "../Navigation";
-import { Loupe } from "../../../Icons/Loupe";
-import { LogButton } from "../LogButton";
-import { LogoComponent } from "../../logo-component";
+import { NavContainer } from "../main-page/NavContainer";
+import { Navigation } from "../main-page/Navigation";
+import { Loupe } from "../../Icons/Loupe";
+import { LogButton } from "../main-page/LogButton";
+import { LogoComponent } from "../logo-component";
 
 const HeaderContainer = styled.div`
   top: 1.188em;
@@ -34,7 +34,7 @@ const HeaderContainer = styled.div`
 function Header() {
   return (
     <HeaderContainer>
-      <LogoComponent/>
+      <LogoComponent />
 
       <NavContainer>
         <ul>
