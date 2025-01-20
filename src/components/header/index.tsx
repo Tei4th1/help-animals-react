@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { NavContainer } from "../main-page/NavContainer";
 import { Navigation } from "../main-page/Navigation";
 import { Loupe } from "../../Icons/Loupe";
-import { LogButton } from "../main-page/LogButton";
 import { LogoComponent } from "../logo-component";
+import { Button } from "../button";
 
 const HeaderContainer = styled.div`
   top: 1.188em;
@@ -49,7 +49,7 @@ function Header() {
           </li>
           <li>
             <a href="#email">
-              <LogButton>Sign in</LogButton>
+              <Button>Sign in</Button>
             </a>
           </li>
         </ul>
