@@ -9,7 +9,7 @@ import {
 } from "./components/main-page/";
 import { RootContainer } from "./components/RootContainer";
 import { useState } from "react";
-import { ModalContainer } from "./components/main-page/DonatePopup/Modal";
+import { ModalContainer } from "./components/modal";
 import Header from "./components/header";
 import LatestArticles from "./components/latest-articles/LatestArticles";
 import Footer from "./components/footer/Footer";
