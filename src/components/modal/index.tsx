@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { SendButton } from "../SendButton";
 import { useState } from "react";
-import { JsxElement } from "typescript";
 
 interface PopupOverlayProps {
   show: boolean;
@@ -12,7 +10,7 @@ interface ModalContainerProps {
   setActive: (value: boolean) => void;
 }
 
-export const Modal = styled.div<PopupOverlayProps>`
+const Modal = styled.div<PopupOverlayProps>`
   display: ${({ show }) => (show ? "flex" : "none")};
   height: 100vh;
   width: 100vw;
@@ -28,12 +26,27 @@ export const Modal = styled.div<PopupOverlayProps>`
     transform: scale(1);
   }
 `;
-export const ModalContent = styled.div`
+const ModalContent = styled.div`
   padding: 20px;
   border-radius: 12px;
   background-color: #f7f7f7;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   min-width: 300px;
+`;
+
+const SendButton = styled.button`
+  margin-top: 30px;
+  padding: 5px 10px;
+  background-color: #e39128;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-height: 40px;
+
+  &:hover {
+    background-color: #cd6326;
+  }
 `;
 
 const DonateTitle = styled.h2`
