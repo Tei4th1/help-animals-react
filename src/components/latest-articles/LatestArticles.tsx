@@ -13,6 +13,7 @@ import {
   SubmitButton,
 } from "./";
 import { ArrowSlider } from "../../Icons/ArrowSlider";
+import { InputStyle } from "../input";
 
 function LatestArticles() {
   const [news, setNews] = useState<string[]>([
@@ -65,7 +66,7 @@ function LatestArticles() {
       </NotifiedTitle>
       <form onSubmit={handleSubmit}>
         <EmailContainer>
-          <EmailInput
+          <InputStyle
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
