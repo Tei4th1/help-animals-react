@@ -7,6 +7,7 @@ import {
 } from "./";
 import { Pintrest, Telegram, Inst, Facebook } from "../../Icons";
 import { LogoComponent } from "../logo-component";
+import { TextLink } from "../text-link";
 
 function Footer() {
   return (
@@ -17,18 +18,18 @@ function Footer() {
         <NavigationPanel>
           <ul>
             <NavLinksStyle>
-              <a href="#articles">Articles</a>
+              <TextLink href="#articles">Articles</TextLink>
             </NavLinksStyle>
             <NavLinksStyle>
-              <a href="#about">About us</a>
+              <TextLink href="#about">About us</TextLink>
             </NavLinksStyle>
             <NavLinksStyle>
-              <a
+              <TextLink
                 href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B8%D0%BD%D0%BF%D0%B8%D1%81"
                 target="_blank"
               >
                 Learn more
-              </a>
+              </TextLink>
             </NavLinksStyle>
           </ul>
         </NavigationPanel>
