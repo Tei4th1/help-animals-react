@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const InputStyle = styled.input`
-  max-width: 540px;
-  height: 54px;
-  border-radius: 15px 0 0 15px;
-  font-size: 23px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  border-right: none;
-  border-color: #666666;
+  font-size: 18px;
+  border: none;
+  color: #8c8c8c;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 5px 0;
+  outline: none;
+  background: none;
 `;

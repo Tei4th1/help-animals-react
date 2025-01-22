@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
+import { InputStyle } from "../input";
 
 interface PopupOverlayProps {
   show: boolean;
@@ -81,25 +82,6 @@ const InputTitle = styled.h3`
   color: #828282;
 `;
 
-const MoneyInput = styled.input`
-  font-size: 18px;
-  border: none;
-  color: #8c8c8c;
-  border-bottom: 1px solid #d3d3d3;
-  padding: 5px 0;
-  outline: none;
-  background: none;
-`;
-
-const NameInput = styled.input`
-  font-size: 18px;
-  border: none;
-  color: #8c8c8c;
-  border-bottom: 1px solid #d3d3d3;
-  padding: 5px 0;
-  outline: none;
-  background: none;
-`;
 
 const CommentInput = styled.input`
   font-size: 18px;
@@ -134,18 +116,18 @@ export const ModalContainer: React.FC<ModalContainerProps> = ({
         <Container>
           <InputsContainer>
             <InputTitle>Your name</InputTitle>
-            <NameInput
+            <InputStyle
               onChange={(e) => setName(e.target.value)}
               placeholder="Name"
               pattern="/^[a-zA-Z ]+$/"
-            ></NameInput>
+            />
           </InputsContainer>
           <InputsContainer>
             <InputTitle>Amount</InputTitle>
-            <MoneyInput
+            <InputStyle
               onChange={(e) => setAmount(Number(e.target.value))}
               placeholder="1000$"
-            ></MoneyInput>
+            />
           </InputsContainer>
           <InputsContainer>
             <InputTitle>Your comment</InputTitle>
