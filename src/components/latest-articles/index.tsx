@@ -5,7 +5,6 @@ export * from "./NewsContainer";
 export * from "./NewsImage";
 export * from "./NotifiedTitle";
 export * from "./SliderContainer";
-export * from "./StyledButton";
 export * from "./SubmitButton";
 export * from "./Subtitle";
 export * from "./Title";
