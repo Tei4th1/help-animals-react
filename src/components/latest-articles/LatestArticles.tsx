@@ -5,14 +5,13 @@ import {
   Subtitle,
   SliderContainer,
   NewsContainer,
-  StyledButton,
   NewsImage,
   NotifiedTitle,
   EmailInput,
   EmailContainer,
   SubmitButton,
 } from "./";
-import { ArrowSlider } from "../../Icons/ArrowSlider";
+import { ArrowBtn } from "../arrow-button";
 
 function LatestArticles() {
   const [news, setNews] = useState<string[]>([
@@ -48,17 +47,13 @@ function LatestArticles() {
       </Title>
       <Subtitle>Breaking news from the wild</Subtitle>
       <SliderContainer>
-        <StyledButton onClick={handlePrev}>
-          <ArrowSlider direction="left" />
-        </StyledButton>
+        <ArrowBtn direction="left" onClick={handlePrev} />
         <NewsContainer>
           {news.map((src, index) => (
             <NewsImage key={index} src={src} alt={`Slide ${index + 1}`} />
           ))}
         </NewsContainer>
-        <StyledButton onClick={handleNext}>
-          <ArrowSlider direction="right" />
-        </StyledButton>
+        <ArrowBtn direction="right" onClick={handleNext} />
       </SliderContainer>
       <NotifiedTitle id="email">
         Get notified about new amazing articles

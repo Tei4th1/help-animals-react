@@ -27,4 +27,3 @@ export const ArrowSlider = ({ direction = "left" }: ArrowSliderInterface) => (
     </svg>
   </StyledRotationWrapper>
 );
-export {};
