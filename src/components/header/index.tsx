@@ -4,6 +4,7 @@ import { Navigation } from "../main-page/Navigation";
 import { Loupe } from "../../Icons/Loupe";
 import { LogoComponent } from "../logo-component";
 import { Button } from "../button";
+import { TextLink } from "../text-link";
 
 const HeaderContainer = styled.div`
   top: 1.188em;
@@ -38,19 +39,17 @@ function Header() {
 
       <NavContainer>
         <ul>
+            <TextLink href="#articles">Articles</TextLink>
           <Navigation>
-            <a href="#articles">Articles</a>
-          </Navigation>
-          <Navigation>
-            <a href="#contacts">Contacts</a>
+            <TextLink href="#contacts">Contacts</TextLink>
           </Navigation>
           <li>
             <Loupe />
           </li>
           <li>
-            <a href="#email">
+            <TextLink href="#email">
               <Button>Sign in</Button>
-            </a>
+            </TextLink>
           </li>
         </ul>
       </NavContainer>
