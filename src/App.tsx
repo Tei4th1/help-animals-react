@@ -6,7 +6,7 @@ import {
   SurvivalTitle,
   MainInfo,
 } from "./components/main-page/";
-import { RootContainer } from "./components/RootContainer";
+import { RootContainer } from "./components/root-container";
 import { useState } from "react";
 import { ModalContainer } from "./components/modal";
 import Header from "./components/header";
