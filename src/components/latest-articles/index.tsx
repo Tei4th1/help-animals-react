@@ -2,7 +2,6 @@ export * from "./Container";
 export * from "./EmailContainer";
 export * from "./EmailInput";
 export * from "./NewsContainer";
-export * from "./NewsImage";
 export * from "./NotifiedTitle";
 export * from "./SliderContainer";
 export * from "./SubmitButton";

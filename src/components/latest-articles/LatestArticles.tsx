@@ -5,28 +5,46 @@ import {
   Subtitle,
   SliderContainer,
   NewsContainer,
-  NewsImage,
   NotifiedTitle,
   EmailInput,
   EmailContainer,
   SubmitButton,
 } from "./";
 import { ArrowBtn } from "../arrow-button";
+import { Card } from "../card";
+
+interface CardProps {
+  title: string;
+  subtitle: string;
+  imagePath: string;
+}
 
 function LatestArticles() {
-  const [news, setNews] = useState<string[]>([
-    "img/news1.jpg",
-    "img/news2.jpg",
-    "img/news3.jpg",
+  const [cards, setCards] = useState<CardProps[]>([
+    {
+      title: "Deer",
+      subtitle: "Naturalist investigation",
+      imagePath: "img/news1.jpg",
+    },
+    {
+      title: "Squirrel",
+      subtitle: "Kamikaze squirrels",
+      imagePath: "img/news2.jpg",
+    },
+    {
+      title: "Bird",
+      subtitle: "Birds Fight club",
+      imagePath: "img/news3.jpg",
+    },
   ]);
   const [email, setEmail] = useState<string>("");
   const handleNext = () => {
-    setNews((prevNews) => [...prevNews.slice(1), prevNews[0]]);
+    setCards((prevCards) => [...prevCards.slice(1), prevCards[0]]);
   };
   const handlePrev = () => {
-    setNews((prevNews) => [
-      prevNews[prevNews.length - 1],
-      ...prevNews.slice(0, -1),
+    setCards((prevCards) => [
+      prevCards[prevCards.length - 1],
+      ...prevCards.slice(0, -1),
     ]);
   };
 
@@ -49,8 +67,13 @@ function LatestArticles() {
       <SliderContainer>
         <ArrowBtn direction="left" onClick={handlePrev} />
         <NewsContainer>
-          {news.map((src, index) => (
-            <NewsImage key={index} src={src} alt={`Slide ${index + 1}`} />
+          {cards.map((card, index) => (
+            <Card
+              key={index}
+              title={card.title}
+              subtitle={card.subtitle}
+              imagePath={card.imagePath}
+            />
           ))}
         </NewsContainer>
         <ArrowBtn direction="right" onClick={handleNext} />
