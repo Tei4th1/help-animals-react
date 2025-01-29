@@ -12,23 +12,12 @@ const HeaderContainer = styled.div`
   align-items: center;
   padding: 20px;
   gap: 20px;
+  flex-direction: row;
 
   @media (min-width: 768px) {
-    flex-direction: row;
     justify-content: space-between;
     gap: 100px;
   }
-
-  @media (min-width: 420px) {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 200px;
-}
-    @media (min-width: 340px) {
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 100px;
-    }
   }
 `;
 
@@ -39,7 +28,7 @@ function Header() {
 
       <NavContainer>
         <ul>
-            <TextLink href="#articles">Articles</TextLink>
+          <TextLink href="#articles">Articles</TextLink>
           <Navigation>
             <TextLink href="#contacts">Contacts</TextLink>
           </Navigation>
